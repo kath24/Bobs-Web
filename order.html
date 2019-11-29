@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bob's Auto Parts</title>
+</head>
+<body>
+    <form action="ordersummary.php" method="post">
+        <table style="border: 1px;">
+         <tr style="background:pink;">
+         <td style="width: 150px; text-align: center;">Item</td>
+         <td style="width: 15px; text-align: center;">Quantity</td>
+         <td style="width: 15px; text-align: center;">Price</td>
+
+         <tr>
+            <td>Tires</td>
+            <td><input type="number" name="tireqty" size="3" maxlength="3" /></td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Oil</td>
+            <td><input type="number" name="oilqty" size="3" maxlength="3" /></td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>Sparks Plugs</td>
+            <td><input type="number" name="sparksqty" size="3" maxlength="3" /></td>
+            <td>$4</td>
+        </tr>
+		<tr>
+		    <td>How did you find Bob's?</td>
+			<td><select name="find">
+			<option value = "a">I'm a regular customer</option>
+			<option value = "b">TV advertising</option>
+			<option value = "c">Phone directory</option>
+			<option value = "d">Word of mouth</option>
+			</select>
+			</td>
+			</tr>
+			<tr>
+            <td colspan="2" style="text-align: center;"><input type="submit" value="submit Order"/></td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
